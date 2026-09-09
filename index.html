@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sona ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hearts"></div>
+  <div id="sparkles"></div>
+
+  <button class="music-btn" id="musicBtn" title="Play / Pause music">🎵 Music</button>
+  <audio id="bgMusic" loop>
+    <!-- Add your song as music.mp3 in this folder -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- OPENING -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="tiny">💗 A little surprise for someone special 💗</div>
+      <h1>Happy Birthday,<br><span>Sumi Darling</span> 🎂</h1>
+      <p class="hero-line">Today is not just another day…<br>it's the day someone truly special was born.</p>
+      <button class="main-btn" id="openBtn">Open Your Surprise 💖</button>
+      <p class="from">With love, <b>Mee :)</b> ❤️</p>
+    </div>
+    <div class="scroll-hint">↓ scroll for your surprise ↓</div>
+  </section>
+
+  <!-- BIRTHDAY REVEAL -->
+  <section class="reveal hidden-section">
+    <div class="section-inner">
+      <div class="eyebrow">✨ YOUR SPECIAL DAY ✨</div>
+      <h2>Happy Birthday, <span>Susmita!</span> 💕</h2>
+      <p class="lead">May your smile stay bright, your heart stay happy, and every beautiful dream find its way to you.</p>
+	  <br>
+      <div class="heart-frame">
+        <div class="heart-photo">
+          <img src="photos/sumi9.jpg" alt="Jack - Photo 1" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+          <span>📸<br>💖</span>
+        </div>
+      </div>
+	  
+      <div class="quote-card">
+        <p>“Some people make the world beautiful simply by being in it. You are one of those people.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section class="memories hidden-section">
+    <div class="section-inner wide">
+      <div class="eyebrow">📸 OUR BEAUTIFUL MOMENTS</div>
+      <h2>Seven Little Memories ❤️</h2>
+      
+      <div class="photo-grid">
+        <div class="photo-card"><div class="photo"><img src="photos/sumi1.jpeg" alt="Photo 1" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>That beautiful smile ✨</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi2.jpg" alt="Photo 2" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>A moment to remember 💕</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi3.jpg" alt="Photo 3" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>Simply beautiful 🌸</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi4.jpg" alt="Photo 4" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>One of my favorites 💗</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi5.jpg" alt="Photo 5" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>A little happiness 🌷</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi6.jpg" alt="Photo 6" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>Another precious memory 🥰</p></div>
+        <div class="photo-card"><div class="photo"><img src="photos/sumi7.jpeg" alt="Photo 7" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');"></div><p>And one more for my heart ❤️</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROMANTIC QUOTES -->
+  <section class="quotes hidden-section">
+    <div class="section-inner">
+      <div class="eyebrow">💌 A FEW WORDS FOR YOU</div>
+      <h2>Because You Are Special</h2>
+
+      <div class="quote-slider">
+        <div class="quote active">“If I could give you one thing today, it would be the ability to see yourself through my eyes — then you'd know just how special you are.”</div>
+        <div class="quote">“You are not just a beautiful part of my life; you are one of the reasons my life feels beautiful.”</div>
+        <div class="quote">“Every smile of yours has a way of making an ordinary moment feel like a beautiful memory.”</div>
+        <div class="quote">“On your birthday, I wish you happiness today, tomorrow, and in every little moment that comes after.”</div>
+      </div>
+
+      <div class="dots" id="quoteDots"></div>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter-section hidden-section">
+    <div class="section-inner">
+      <div class="letter">
+        <div class="rose">🌹</div>
+        <h2>A Little Letter For You</h2>
+        <p>My Dearest Susmita ❤️,</p>
+        <p>
+          Today is a very special day because it is the day the world became a little
+          brighter with your presence. I hope you always remember how wonderful,
+          beautiful, and precious you are.
+        </p>
+        <p>
+          I don't need a special reason to appreciate you, but your birthday gives me
+          the perfect excuse to say it: you deserve love, laughter, peace, success,
+          and every happiness your heart can hold.
+        </p>
+        <p>
+          May this new year of your life bring you closer to your dreams and fill your
+          days with countless reasons to smile. And whenever life feels difficult,
+          remember that someone is always wishing the very best for you.
+        </p>
+        <p class="signature">With all my love,<br><b>Mee :) ❤️</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final hidden-section" id="final">
+    <div class="fireworks" id="fireworks"></div>
+    <div class="final-content">
+      <div class="cake">🎂</div>
+      <h2>Happy Birthday, <span>Sona!</span></h2>
+      <p>May all your dreams come true.</p>
+      <p class="big-love">You deserve all the happiness in the world. ❤️</p>
+      <button class="main-btn" id="wishBtn">Make a Birthday Wish ✨</button>
+      <p class="final-sign">Forever wishing you the best,<br><b></b> 💕</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
